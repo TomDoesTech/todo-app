@@ -1,5 +1,5 @@
 echo "Pulling..."
 git pull
 
-eccho "Building..."
+echo "Building..."
 docker-compose up -d --build
