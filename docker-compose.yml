@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  todo-app:
+    container_name: todo-app
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+    build:
+      context: ./
+    ports:
+      - 4000:4000
